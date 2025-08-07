@@ -102,7 +102,7 @@ def get_cited_answer_agent(pages_data, question, model_name="llama3-8b-8192"):
 
 
 if __name__ == "__main__":
-    pdf_file = "gradient-desceny.pdf"
+    pdf_file = "media\gradient-desceny.pdf"  
     
     all_pages_data = extract_text_from_all_pages(pdf_file)
 
@@ -113,6 +113,7 @@ if __name__ == "__main__":
             user_question = input("\nYou (type 'quit' to exit): ")
             
             if user_question.lower() in ['quit', 'exit']:
+                
                 print("Exiting chat. Goodbye!")
                 break
             
